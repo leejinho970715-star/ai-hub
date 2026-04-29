@@ -1,0 +1,17 @@
+{
+  "buildCommand": "",
+  "devCommand": "npx http-server .",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/$1"
+    },
+    {
+      "source": "/.*",
+      "destination": "/index.html"
+    }
+  ]
+}

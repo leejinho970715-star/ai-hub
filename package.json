@@ -1,0 +1,17 @@
+{
+  "name": "ai-hub",
+  "version": "1.0.0",
+  "description": "Cloud-Labs | AI 심리테스트, 운세, 유틸리티 허브",
+  "keywords": [
+    "AI심리테스트",
+    "TCI검사",
+    "MBTI정밀테스트",
+    "방어기제테스트",
+    "AI사주",
+    "AI타로",
+    "로또번호추출기"
+  ],
+  "author": "Cloud-Labs",
+  "license": "MIT",
+  "private": true
+}
