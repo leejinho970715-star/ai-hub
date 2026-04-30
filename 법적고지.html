@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-Labs | 법적 고지</title>
+    <link rel="canonical" href="https://cloud-labs.com">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { 
+            font-family: 'Inter', sans-serif; 
+            /* iframe 내부에서 불필요한 전체 스크롤바 방지 */
+            overflow-x: hidden;
+        }
+        .legal-content h2 { @apply text-xl font-bold mt-8 mb-4 text-slate-800; }
+        .legal-content p { @apply mb-3 text-slate-600 leading-relaxed; }
+        .legal-content ul { @apply list-disc ml-6 mb-4 text-slate-600; }
+        .legal-content li { @apply mb-1; }
+        
+        /* iframe 모드일 때 스크롤바 디자인 최적화 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            @apply bg-slate-100;
+        }
+        ::-webkit-scrollbar-thumb {
+            @apply bg-slate-300 rounded-full;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            @apply bg-slate-400;
+        }
+    </style>
+</head>
+<body class="bg-white min-h-screen">
+
+    <div class="max-w-4xl mx-auto px-4 py-8">
+        <div class="text-center mb-8">
+            <h1 class="text-2xl font-bold text-slate-900 mb-1">법적 고지</h1>
+            <p class="text-sm text-slate-500">Cloud-Labs 서비스를 이용해주셔서 감사합니다.</p>
+        </div>
+
+        <!-- 탭 메뉴 (고정형) -->
+        <div class="sticky top-0 bg-white flex border-b border-slate-200 mb-6 z-10">
+            <button onclick="showTab('tos')" id="tab-tos" class="flex-1 px-4 py-3 font-semibold text-blue-600 border-b-2 border-blue-600 transition-all">이용약관</button>
+            <button onclick="showTab('privacy')" id="tab-privacy" class="flex-1 px-4 py-3 font-semibold text-slate-500 hover:text-slate-700 transition-all">개인정보처리방침</button>
+        </div>
+
+        <!-- 이용약관 -->
+        <div id="content-tos" class="legal-content">
+            <h2 class="mt-0">제 1 조 (목적)</h2>
+            <p>본 약관은 Cloud-Labs(이하 "회사")가 제공하는 AI 도구 서비스(이하 "서비스")의 이용 조건 및 절차, 회사와 회원간의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+
+            <h2>제 2 조 (용어의 정의)</h2>
+            <p>1. "서비스"라 함은 회사가 제공하는 AI 이미지 생성, 텍스트 분석, TTS 등 모든 웹 기반 도구를 의미합니다.<br>
+               2. "이용자"라 함은 본 약관에 따라 서비스를 이용하는 모든 자를 의미합니다.</p>
+
+            <h2>제 3 조 (서비스의 이용 및 제한)</h2>
+            <p>1. 이용자는 회사가 제공하는 도구를 본래의 목적에 맞게 자유롭게 이용할 수 있습니다.<br>
+               2. 이용자는 서비스를 통해 생성된 결과물에 대해 발생하는 법적 책임(저작권 등)을 스스로 부담합니다.<br>
+               3. 회사는 다음 각 호에 해당하는 경우 서비스 이용을 제한할 수 있습니다.</p>
+            <ul>
+                <li>타인의 권리를 침해하거나 범죄 행위에 활용하는 경우</li>
+                <li>서비스의 정상적인 운영을 방해하는 자동화된 접근(Bot/Scraper 등)</li>
+                <li>회사 웹사이트의 보안을 위협하는 행위</li>
+            </ul>
+
+            <h2>제 4 조 (면책조항)</h2>
+            <p>1. 회사는 AI 모델이 생성하는 정보의 정확성, 안전성, 적절성을 보장하지 않습니다.<br>
+               2. 회사는 천재지변, 서비스 점검 등 불가항력적인 사유로 인해 서비스가 중단되는 경우 책임을 지지 않습니다.</p>
+
+            <p class="text-sm text-slate-400 mt-10 italic">시행일: 2026년 5월 20일</p>
+        </div>
+
+        <!-- 개인정보처리방침 -->
+        <div id="content-privacy" class="legal-content hidden">
+            <h2 class="mt-0">1. 수집하는 개인정보 항목</h2>
+            <p>회사는 서비스 제공을 위해 최소한의 정보만을 수집합니다.</p>
+            <ul>
+                <li>필수 항목: 기기 정보(IP 주소, 브라우저 정보), 서비스 이용 기록</li>
+                <li>선택 항목: API 이용 시 입력하는 텍스트 또는 이미지 데이터</li>
+            </ul>
+
+            <h2>2. 개인정보의 수집 및 이용 목적</h2>
+            <p>수집된 정보는 다음의 목적을 위해서만 활용됩니다.</p>
+            <ul>
+                <li>서비스 제공 및 기능 최적화</li>
+                <li>부정 이용 방지 및 보안 유지</li>
+                <li>신규 기능 개발을 위한 통계적 분석</li>
+            </ul>
+
+            <h2>3. 개인정보의 보유 및 이용 기간</h2>
+            <p>이용자의 개인정보는 서비스 이용 기간 동안 보유하며, 이용 목적이 달성된 후에는 지체 없이 파기합니다. 단, 관계 법령에 의해 보존할 필요가 있는 경우 해당 기간 동안 보관합니다.</p>
+
+            <h2>4. 개인정보의 파기 절차 및 방법</h2>
+            <p>전자적 파일 형태의 정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.</p>
+
+            <h2>5. 이용자의 권리</h2>
+            <p>이용자는 언제든지 자신의 개인정보를 조회하거나 삭제를 요청할 수 있습니다. (문의: support@cloud-labs.com)</p>
+
+            <h2>6. 쿠키(Cookie)의 운용</h2>
+            <p>회사는 이용자의 편의를 위해 쿠키를 사용할 수 있습니다. 이용자는 브라우저 설정을 통해 쿠키 저장을 거부할 수 있습니다.</p>
+
+            <p class="text-sm text-slate-400 mt-10 italic">최종 수정일: 2026년 5월 20일</p>
+        </div>
+
+        <!-- iframe 임베드 시 홈으로 돌아가기 링크는 상황에 따라 숨길 수 있습니다 -->
+        <div id="home-link" class="mt-12 text-center pb-8">
+            <a href="./index.html" target="_parent" class="text-blue-600 hover:underline text-sm font-medium">홈으로 돌아가기</a>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tab) {
+            const tosContent = document.getElementById('content-tos');
+            const privacyContent = document.getElementById('content-privacy');
+            const tosTab = document.getElementById('tab-tos');
+            const privacyTab = document.getElementById('tab-privacy');
+
+            // 탭 전환 시 상단으로 스크롤 이동 (iframe 내부 스크롤 대응)
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            if (tab === 'tos') {
+                tosContent.classList.remove('hidden');
+                privacyContent.classList.add('hidden');
+                tosTab.classList.add('text-blue-600', 'border-blue-600');
+                tosTab.classList.remove('text-slate-500');
+                privacyTab.classList.remove('text-blue-600', 'border-blue-600');
+                privacyTab.classList.add('text-slate-500');
+            } else {
+                privacyContent.classList.remove('hidden');
+                tosContent.classList.add('hidden');
+                privacyTab.classList.add('text-blue-600', 'border-blue-600');
+                privacyTab.classList.remove('text-slate-500');
+                tosTab.classList.remove('text-blue-600', 'border-blue-600');
+                tosTab.classList.add('text-slate-500');
+            }
+        }
+
+        // 부모 페이지에서 iframe의 높이를 자동으로 조절할 수 있도록 메시지 전송 (선택 사항)
+        function sendHeight() {
+            if (window.parent) {
+                window.parent.postMessage({
+                    frameHeight: document.body.scrollHeight
+                }, '*');
+            }
+        }
+        window.addEventListener('load', sendHeight);
+        window.addEventListener('resize', sendHeight);
+    </script>
+</body>
+</html>
